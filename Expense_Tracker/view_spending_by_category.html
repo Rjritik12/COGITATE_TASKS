@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Spending by Category</title>
+</head>
+<body>
+    <h1>View Spending by Category</h1>
+    <ul>
+    {% for category, amount in spending_by_category.items() %}
+        <li>Category: {{ category }}, Amount: {{ amount }}</li>
+    {%endfor %}
+    </ul>
+</body>
+</html>
